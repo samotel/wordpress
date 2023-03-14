@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/samotelt/public_html/wp-content/themes/Samotel
+    - /bin/cp -R * $DEPLOYPATH
