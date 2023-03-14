@@ -1,8 +1,23 @@
-#pageHead{
-    background: linear-gradient(90deg, rgba(176, 224, 146, 0.5), rgba(131, 201, 187, 0.5)), url('../img/page-head-bg.jpeg') no-repeat center top;
-    background-size: cover;
+.pb-6 {
+  padding-bottom: 6rem !important;
 }
 
-/* main{
-    min-height: 3rem;
-} */
+#pageHead {
+  background: linear-gradient(
+      90deg,
+      rgba(176, 224, 146, 0.5),
+      rgba(131, 201, 187, 0.5)
+    ),
+    url("../img/page-head-bg.jpeg") no-repeat center top;
+  background-size: cover;
+}
+
+#logoTop {
+  margin-top: -12rem;
+}
+
+#logoTop figure {
+  width: 320px;
+  height: 320px;
+  overflow: hidden;
+}
