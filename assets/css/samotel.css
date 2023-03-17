@@ -1,3 +1,17 @@
+body{
+    background-color: #ffffff;
+    color: #575757;
+}
+
+.text-primary, .btn-outline-primary {
+    color: rgb(67 128 111) !important;
+}
+
+.btn.active{
+    background-color: rgb(67 128 111);
+    border-color: rgb(67 128 111);
+}
+
 .pb-6 {
   padding-bottom: 6rem !important;
 }
@@ -20,4 +34,8 @@
   width: 320px;
   height: 320px;
   overflow: hidden;
+}
+
+#photoView{
+    min-height: 20rem;
 }

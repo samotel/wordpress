@@ -8,7 +8,7 @@
  * Keywords: image, responsive, logo
  * Block Types: core/image
  *
- * @package inable
+ * @package samotel
  * @since 1.0.0
  */
 ?>

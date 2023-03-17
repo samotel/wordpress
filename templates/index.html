@@ -2,12 +2,13 @@
 <main class="wp-block-group mt-5">
   <div class="container">
     <div id="aboutUs">
-      <h2 class="text-center">ABOUT US<br /><span class="fs-4">SAMOTEL TOURS</span>
+      <h2 class="text-center">
+        ABOUT US<br /><span class="fs-4">SAMOTEL TOURS</span>
       </h2>
       <p class="text-center">
-        Oh Samotel Tours and travels was founded by Chef Samaon Clement
-        "Okongo". We offer tour guide services for Safaris, clutural, tours,
-        hiking, and fishing.
+        Samotel Tours and travels was founded by Chef Samaon Clement "Okongo".
+        We offer tour guide services for Safaris, clutural, tours, hiking, and
+        fishing.
       </p>
       <div class="row">
         <div class="col-md-3">
@@ -59,22 +60,99 @@
       </div>
     </div>
   </div>
-  <div class="bg-light pt-5" id="contactUs">
+
+  <div class="mt-5" id="album">
     <div class="container">
-      <h2 class="text-center">CONTACT US<br> <span class="fs-4">FEEL FREE TO REACH OUT</span></h2>
+      <h2 class="text-center">
+        ALBUM<br />
+        <span class="fs-4">PHOTOS FROM PREVIOUS TOURS</span>
+      </h2>
+      <div class="text-center">
+        <div class="py-3">
+          <ul id="filterList" class="list-inline">
+            <li class="list-inline-item">
+              <span id="filterLabel">Filter Photos:</span>
+            </li>
+            <li class="list-inline-item">
+              <button
+                class="btn btn-outline-primary rounded-1 active"
+                data-filter="*"
+              >
+                SHOW ALL
+              </button>
+            </li>
+            <li class="list-inline-item">
+              <button
+                class="btn btn-outline-primary rounded-1"
+                data-filter="camping"
+              >
+                CAMPING
+              </button>
+            </li>
+            <li class="list-inline-item">
+              <button
+                class="btn btn-outline-primary rounded-1"
+                data-filter="fishing"
+              >
+                FISHING
+              </button>
+            </li>
+            <li class="list-inline-item">
+              <button
+                class="btn btn-outline-primary rounded-1"
+                data-filter="game"
+              >
+                GAME
+              </button>
+            </li>
+            <li class="list-inline-item">
+              <button
+                class="btn btn-outline-primary rounded-1"
+                data-filter="meals"
+              >
+                MEALS
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="photoView" class="row"></div>
+      <!-- .filterable-items -->
+    </div>
+    <!-- .container -->
+  </div>
+  <div class="bg-light mt-5 pt-5" id="contactUs">
+    <div class="container">
+      <h2 class="text-center">
+        CONTACT US<br />
+        <span class="fs-4">FEEL FREE TO REACH OUT</span>
+      </h2>
       <div class="row pt-4 pb-5">
-        <div class="col-md-4">
+        <div class="col-sm-3">
           <div class="contact-detail">
-            <h3 class="fs-6">Oh Samotel Tour and Travels Africa</h3>
+            <h3 class="fs-6">Samotel Tour and Travels Africa</h3>
             <ul class="list-unstyled">
               <li class="my-3">
-                <span class="border border-3 border-primary rounded-circle p-1 me-2"><i class="fa fa-map-marker-alt fa-fw text-primary"></i></span> Juba, South Sudan
+                <span
+                  class="border border-3 border-primary rounded-circle p-1 me-2"
+                  ><i class="fa fa-map-marker-alt fa-fw text-primary"></i
+                ></span>
+                Juba, South Sudan
               </li>
               <li class="my-3">
-                <span class="border border-3 border-primary rounded-circle p-1 me-2"><i class="fa fa-phone fa-fw text-primary"></i></span> +211 926 098 450
+                <span
+                  class="border border-3 border-primary rounded-circle p-1 me-2"
+                  ><i class="fa fa-phone fa-fw text-primary"></i
+                ></span>
+                +211 926 098 450
               </li>
               <li class="my-3">
-                <span class="border border-3 border-primary rounded-circle p-1 me-2"><i class="fa fa-envelope fa-fw text-primary"></i></span> info@samoteltours.org
+                <span
+                  class="border border-3 border-primary rounded-circle p-1 me-2"
+                  ><i class="fa fa-envelope fa-fw text-primary"></i
+                ></span>
+                info@samoteltours.org
               </li>
             </ul>
           </div>
