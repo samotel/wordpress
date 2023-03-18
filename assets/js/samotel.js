@@ -1,5 +1,4 @@
 jQuery(document).ready(($) => {
-  console.log(photo_dump);
   const show_photos = (selected_filter = "*") => {
     $("#photoView").html("");
     let new_dump = photo_dump;
@@ -11,9 +10,9 @@ jQuery(document).ready(($) => {
     if (new_dump.length) {
       new_dump.forEach((item) => {
         $("#photoView")
-          .append(`<div class="col-6 col-sm-4 col-md-3 col-lg-2 col-xl-1 mb-4">
+          .append(`<div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-4">
           <img
-            class="img-fluid"
+            class="object-fit-cover"
             src="${item.img}"
             alt="${item.alt}"
           />
@@ -27,8 +26,10 @@ jQuery(document).ready(($) => {
   show_photos();
 
   $("#filterList button").click((e) => {
+    $("#filterList button").removeClass("active");
     e.preventDefault();
     btn = $(e.target);
+    btn.addClass("active");
     show_photos(btn.attr("data-filter"));
   });
 });

@@ -58,7 +58,7 @@ if (!function_exists('samotel_scripts_styles')) :
             if ($wp_query->have_posts()) {
                 $photo_dump = array_map(function ($item) {
                     return [
-                        'img' => wp_get_attachment_image_src($item->ID)[0],
+                        'img' => $item->guid,
                         'alt' => $item->post_title,
                         'cat' => wp_get_attachment_caption($item->ID)
                     ];
