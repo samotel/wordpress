@@ -1,19 +1,19 @@
 <?php
 
-// if (!function_exists('samotel_setup')) :
+// if (!function_exists('samotel_theme_setup')) :
 //     /**
 //      * Sets up theme defaults and registers support for various WordPress features.
 //      *
 //      * Note that this function is hooked into the after_setup_theme hook, which runs
 //      * before the init hook.
 //      */
-//     function myfirsttheme_setup()
+//     function samotel_theme_setup()
 //     {
 
 
 //     }
-// endif; // myfirsttheme_setup
-// add_action('after_setup_theme', 'samotel_setup');
+// endif; // samotel_theme_setup
+// add_action('after_setup_theme', 'samotel_theme_setup');
 
 if (!function_exists('samotel_scripts_styles')) :
     function samotel_scripts_styles()
@@ -50,6 +50,7 @@ if (!function_exists('samotel_scripts_styles')) :
                     'posts_per_page' => 100,
                     'post_type' => 'attachment',
                     'post_status' => 'inherit',
+                    'post_parent' => $wp_query1_id,
                     'orderby' => 'date',
                     'order' => 'DESC',
                 ]
